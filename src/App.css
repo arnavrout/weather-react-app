@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+}
+body {
+  background-image: url("./images/weather.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.searchBox {
+  float: right;
+}
+
+.dynamicCity {
+  margin-bottom: 25px;
+  width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-header {
+  background: #fff;
+}
+.card-header:hover {
+  background: #FEAC00;
+}
+.navbar {
+  background: #fff;
+}
+
+.navbar-brand {
+  background-image: url("./images/textBG.jpg");
+  background-size: cover;
+  background-clip: text; 
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+#cityName {
+  background-image: url("./images/textBG.jpg");
+  background-size: cover;
+  background-clip: text; 
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.submitBtn {
+  background: #fff;
+  border: 1px solid #FEAC00;
+  border-radius: 10px;
+}
+
+.submitBtn:hover {
+  background: #FEAC00;
+  color: #fff;
+}
+
+.card-body {
+  background-image: url("./images/weatherBG.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#carouselExample {
+  background-image: url('./images/weatherBG.jpg');
+  margin-left: auto;
+  width: 70%;
+  margin-right: auto;
+  color: #fff;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+footer {
+  background-color: #6f9196; /* Background color for the footer */
+  color: white; /* Text color for the footer */
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer p {
+  font-family: sans-serif;
+}
+
+footer a {
+  text-decoration: none; 
+  color: white; 
+}
+
+footer i.fab.fa-linkedin {
+  color: white;
+}
+
+
+@media screen and (max-width: 620px) and (min-width: 320px) {
+  body {
+      overflow-y: auto; /* Enable vertical scrolling for the body */
+  }
+  .searchBox {
+      width: 100%;
+      float: none; /* You may want to remove the float property at smaller screen sizes */
+  }
+
+  .dynamicCity {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 800px) and (min-width: 320px) {
+  footer {
+      font-size: 14px;
+      position: absolute;
+      bottom: auto;
+}
+
+.dynamicCity {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 80%;
+}
+#carouselExample {
+  margin-bottom: 50px;
+  width: 100%;
+}
+}
